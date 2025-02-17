@@ -19,18 +19,10 @@ jobs:
       id: meta
       uses: docker/metadata-action@v5
       with:
-        # list of Docker images to use as base name for tags
         images: |
           ghcr.io/eodcgmbh/cluster_image
-        # generate Docker tags based on the following events/attributes
         tags: |
-          type=schedule
-          type=ref,event=branch
-          type=ref,event=pr
-          type=semver,pattern={{version}}
-          type=semver,pattern={{major}}.{{minor}}
-          type=semver,pattern={{major}}
-          type=sha
+          type=semver,pattern={{raw}}
     - name: Checkout repository
       uses: actions/checkout@v2
 
@@ -49,4 +41,3 @@ jobs:
       with:
         push: ${{ github.event_name != 'pull_request' }}
         tags: ${{ steps.meta.outputs.tags }}
-        labels: ${{ steps.meta.outputs.labels }}
