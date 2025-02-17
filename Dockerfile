@@ -49,7 +49,7 @@ COPY --chown=1000:1000 ./poetry.lock .
 COPY --chown=1000:1000 ./dask.yaml ~/.config/dask/dask.yaml
 
 # Install dependencies
-RUN poetry install --without local --no-root
+RUN poetry install --no-root
 
 # ----------------------------------------------------
 # PRODUCTION
