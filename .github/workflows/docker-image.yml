@@ -32,4 +32,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${{ env.REGISTRY }}/eodcgmbh/cluster_image:${{ steps.git_tag.outputs.tag }}
+        tags: ${{ env.REGISTRY }}/eodcgmbh/cluster_image:${{ github.event.release.tag_name }}
