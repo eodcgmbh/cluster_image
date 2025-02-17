@@ -1,0 +1,7 @@
+distributed:
+  comm:
+    timeouts:
+      connect: 600s  # default: 0.30s
+      tcp: 6000s  # default: 30s
+  deploy:
+    lost-worker-timeout: 300s  # default: 15s

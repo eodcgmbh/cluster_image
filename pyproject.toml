@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "eodc-cluster-image"
+version = "1.0.0"
+description = ""
+authors = ["Tobias Stachl <tobias.stachl@eodc.eu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+eodc = "^2024.8.1"
+dask-gateway = "^2023.8.0"
+# Dask minimum 2024.4.1. 2024.4.0 breaks on Python 3.11.9!
+dask = {extras = ["array", "dataframe", "distributed"], version = "<=2024.5.2"}
+rioxarray = "^0.17.0"
+odc-stac = "^0.3.10"
+xarray = "^2024.11.0"
+zarr = "^2.18.4"
+bokeh = "^3.6.3"
+stactools = "^0.5.3"
+pystac-client = "^0.8.6"
+pytileproj = "^0.0.17"
+pyproj = "^3.7.0"
+lz4 = "^4.4.3"
+s3fs = "^2025.2.0"
+fsspec = "^2025.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
