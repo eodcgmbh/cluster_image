@@ -1206,13 +1206,13 @@ idna = ">=2.0.0"
 
 [[package]]
 name = "eodc"
-version = "2024.11.1"
+version = "2025.3.2"
 description = "Python SDK for interacting with EODC services."
 optional = false
 python-versions = "<3.12,>=3.9"
 files = [
-    {file = "eodc-2024.11.1-py3-none-any.whl", hash = "sha256:902a93f453391164ea5d580c5d5ea08ebb9f69b91f3fe7582a9495f4ad9b1a62"},
-    {file = "eodc-2024.11.1.tar.gz", hash = "sha256:2e89d66821c1f3f49bec7da588ef495b79da874b811c08ab4c417fdc534dc42e"},
+    {file = "eodc-2025.3.2-py3-none-any.whl", hash = "sha256:202e45931aec4dc972483053ddf54bea0dfcbc9526a15c0534ae55b61f2665fd"},
+    {file = "eodc-2025.3.2.tar.gz", hash = "sha256:d0be31e50a211f12f9f2b9906fdae4be2b613042451e90e796f5931cad4d305c"},
 ]
 
 [package.dependencies]
@@ -4486,4 +4486,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<3.12"
-content-hash = "1b114aa281a893c94e825b14a00c277612cbb71ced7ad9dc8b471a186b8164ae"
+content-hash = "5f1d1208a82b63593a0f7368c5631783117dd93dc588882c6e2df2b1e9d39d22"
