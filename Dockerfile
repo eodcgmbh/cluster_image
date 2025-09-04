@@ -1,5 +1,5 @@
 # Use the official Python image from the Docker Hub
-FROM python:3.11-bookworm AS base
+FROM python:3.12-bookworm AS base
 
 RUN addgroup --gid 1000 ubuntu
 RUN adduser --disabled-password --gecos '' --uid 1000 --gid 1000 ubuntu
