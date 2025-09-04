@@ -53,7 +53,7 @@ RUN poetry install --no-root
 
 # ----------------------------------------------------
 # PRODUCTION
-FROM python:3.11-slim-bookworm AS production
+FROM python:3.12-slim-bookworm AS production
 
 RUN DEBIAN_FRONTEND=noninteractive \
     && apt-get update \
