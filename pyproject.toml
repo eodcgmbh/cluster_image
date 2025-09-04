@@ -1,13 +1,12 @@
 [tool.poetry]
-name = "eodc-cluster-image"
-version = "1.0.0"
+name = "cluster-image"
+version = "2025.9.2"
 description = ""
 authors = ["Tobias Stachl <tobias.stachl@eodc.eu>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.11,<3.12"
-# Dask minimum 2024.4.1. 2024.4.0 breaks on Python 3.11.9!
+python = ">=3.12.10,<3.13"
 eodc-connect = "^0.0.2"
 s3fs = "^2025.9.0"
 rioxarray = "^0.19.0"
