@@ -711,14 +711,14 @@ test-randomorder = ["pytest-randomly"]
 
 [[package]]
 name = "dask"
-version = "2025.9.0"
+version = "2025.7.0"
 description = "Parallel PyData with Task Scheduling"
 optional = false
 python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "dask-2025.9.0-py3-none-any.whl", hash = "sha256:cb8d74476dda10c558234c02d1639386cc5c9cef0252245cf77043fb1f2495d1"},
-    {file = "dask-2025.9.0.tar.gz", hash = "sha256:37a3e73f3bba43e2b9de38a33b315c18a881d2108aba078685bab8e5c2cff7a0"},
+    {file = "dask-2025.7.0-py3-none-any.whl", hash = "sha256:073c29c4e99c2400a39a8a67874f35c1d15bf7af9ae3d0c30af3c7c1199f24ae"},
+    {file = "dask-2025.7.0.tar.gz", hash = "sha256:c3a0d4e78882e85ea81dbc71e6459713e45676e2d17e776c2f3f19848039e4cf"},
 ]
 
 [package.dependencies]
@@ -736,7 +736,7 @@ array = ["numpy (>=1.24)"]
 complete = ["dask[array,dataframe,diagnostics,distributed]", "lz4 (>=4.3.2)", "pyarrow (>=14.0.1)"]
 dataframe = ["dask[array]", "pandas (>=2.0)", "pyarrow (>=14.0.1)"]
 diagnostics = ["bokeh (>=3.1.0)", "jinja2 (>=2.10.3)"]
-distributed = ["distributed (==2025.9.0)"]
+distributed = ["distributed (==2025.7.0)"]
 test = ["pandas[test]", "pre-commit", "pytest", "pytest-cov", "pytest-mock", "pytest-rerunfailures", "pytest-timeout", "pytest-xdist"]
 
 [[package]]
@@ -764,20 +764,20 @@ kerberos = ["pykerberos", "winkerberos"]
 
 [[package]]
 name = "distributed"
-version = "2025.9.0"
+version = "2025.7.0"
 description = "Distributed scheduler for Dask"
 optional = false
 python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "distributed-2025.9.0-py3-none-any.whl", hash = "sha256:87c35e4aefb5525d44032b40d7d780b4e9e398b6d567ca5bb6cc7b2150c48aa9"},
-    {file = "distributed-2025.9.0.tar.gz", hash = "sha256:f10e09d6f314e8959b97b633a44ce1807e89197445119fa313333c2df527d25a"},
+    {file = "distributed-2025.7.0-py3-none-any.whl", hash = "sha256:51b74526c2bee409ca968ee5532c79de1c1a1713664f5ccf90bdd81f17cfdc73"},
+    {file = "distributed-2025.7.0.tar.gz", hash = "sha256:5f8ec20d3cdfb286452831c6f9ebee84527e9323256c20dd2938d9c6e62c5c18"},
 ]
 
 [package.dependencies]
 click = ">=8.0"
 cloudpickle = ">=3.0.0"
-dask = "2025.9.0"
+dask = "2025.7.0"
 jinja2 = ">=2.10.3"
 locket = ">=1.0.0"
 msgpack = ">=1.0.2"
@@ -793,13 +793,13 @@ zict = ">=3.0.0"
 
 [[package]]
 name = "eodc-connect"
-version = "0.0.2"
+version = "0.0.3"
 description = "Python library for authentication towards EODC services"
 optional = false
 python-versions = "<3.13,>=3.9"
 groups = ["main"]
 files = [
-    {file = "eodc_connect-0.0.2-py3-none-any.whl", hash = "sha256:d6ce8bde3bdb4e6416a675fb76237a5cff2e95370d4c03123dbd80da34fcd11b"},
+    {file = "eodc_connect-0.0.3-py3-none-any.whl", hash = "sha256:9cfbe3dcc0b14ff9b302b9e9cc0af16d76830b6af9ac74c512e7246edf523df1"},
 ]
 
 [package.dependencies]
@@ -3100,4 +3100,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12.10,<3.13"
-content-hash = "63b504f0c63ed5c963758079a3d34fefe5e1129a2e2425c7b6d8b4210592c56b"
+content-hash = "47dcfd5bc592de79a49daba78efc7443cdffd3171ad2c77e0b7a8f766dd58d8e"
