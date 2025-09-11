@@ -793,21 +793,22 @@ zict = ">=3.0.0"
 
 [[package]]
 name = "eodc-connect"
-version = "0.0.3"
+version = "0.0.4"
 description = "Python library for authentication towards EODC services"
 optional = false
-python-versions = "<3.13,>=3.9"
+python-versions = "<3.13,>=3.10"
 groups = ["main"]
 files = [
-    {file = "eodc_connect-0.0.3-py3-none-any.whl", hash = "sha256:9cfbe3dcc0b14ff9b302b9e9cc0af16d76830b6af9ac74c512e7246edf523df1"},
+    {file = "eodc_connect-0.0.4-py3-none-any.whl", hash = "sha256:a77781bfc9e484474d312169ecb12fdd1f5e418e1e7c14d81adf0efca81557be"},
 ]
 
 [package.dependencies]
-dask-gateway = ">=2023.1.1"
+dask = "==2025.7.*"
+dask-gateway = "2025.4.0"
 pydantic = ">=2.0.1,<3.0.0"
 pydantic-settings = ">=2.3.4,<3.0.0"
 pyjwt = {version = ">=2.8.0,<3.0.0", extras = ["crypto"]}
-requests = ">=2.28.2,<3.0.0"
+requests = ">=2.32.5,<3.0.0"
 
 [[package]]
 name = "frozenlist"
@@ -3100,4 +3101,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12.10,<3.13"
-content-hash = "47dcfd5bc592de79a49daba78efc7443cdffd3171ad2c77e0b7a8f766dd58d8e"
+content-hash = "1888b1434cd43231705f39b2df394aab5613197dc41031e61d145c2855f1c310"
